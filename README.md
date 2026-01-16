@@ -24,7 +24,7 @@ Every 3 arcsecond patch of sky now has a unique 3-word combination associated wi
 ## Installation
 
 To avoid issues with dependencies, we recommend setting up a virtual environment using
-your favourite package manager. Then:c
+your favourite package manager. Then:
 
 ```bash
 pip install starhash
