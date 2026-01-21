@@ -2,6 +2,7 @@
 
 Generate unique, memorable, and deterministic names for astronomical objects.
 
+[![Documentation](https://img.shields.io/badge/docs-tkilleste.in-blue)](https://tkilleste.in/starhash/)
 [![Python Version](https://img.shields.io/pypi/pyversions/starhash)](https://pypi.org/project/starhash/)
 [![PyPI version](https://badge.fury.io/py/starhash.svg)](https://badge.fury.io/py/starhash)
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
@@ -72,6 +73,10 @@ And you're ready to go!
 
 Before committing any changes, run `pytest` to confirm that the hashing code still
 satisfies the round-trip property.
+
+Documentation is built via `mkdocs` - add Markdown files to `docs` and edit the
+`mkdocs.yml` file to build pages there. Then commit and push your changes, and run
+`mkdocs gh-deploy` to update the documentations site.
 
 ## Citation
 

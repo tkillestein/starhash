@@ -73,6 +73,10 @@ And you're ready to go!
 Before committing any changes, run `pytest` to confirm that the hashing code still
 satisfies the round-trip property.
 
+Documentation is built via `mkdocs` - add Markdown files to `docs` and edit the
+`mkdocs.yml` file to build pages there. Then commit and push your changes, and run
+`mkdocs gh-deploy` to update the documentations site.
+
 ## Citation
 
 If you include StarHash in your favourite pipeline/broker/API, please cite:
