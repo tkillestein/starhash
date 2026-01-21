@@ -1,0 +1,12 @@
+site_name: StarHash Docs
+theme:
+  name: readthedocs
+  highlightjs: true
+  color_mode: auto
+site_description: 'Generate unique, memorable, and deterministic names for astronomical objects.'
+repo_url: https://github.com/tkillestein/starhash
+copyright: Tom Killestein (2026)
+
+nav:
+  - Home: index.md
+  - License: license.md
