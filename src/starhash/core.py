@@ -100,7 +100,7 @@ class StarHash:
         logger.debug("Grid coverage factor: %.3f x", self.coverage)
 
         if self.coverage < 1:
-            raise IncompleteHEALPIXCoverageError
+            raise IncompleteHEALPixCoverageError
 
     def coordinate_to_words(self, ra: float, dec: float) -> str:
         idx = ang2pix(self.healpix_nside, ra, dec, lonlat=True)
@@ -129,7 +129,7 @@ class StarHash:
         idx = int(stridx_decrypted)
 
         if idx > self.npix:
-            raise InvalidHEALPIXIndexError
+            raise InvalidHEALPixIndexError
 
         ra, dec = pix2ang(self.healpix_nside, idx, lonlat=True)
 
@@ -155,12 +155,12 @@ def collate_wordlist() -> list[str]:
     return sorted(set(wordlist))
 
 
-class IncompleteHEALPIXCoverageError(Exception):
-    """The chosen StarHash parameters do not fully cover the chosen HEALPIX grid."""
+class IncompleteHEALPixCoverageError(Exception):
+    """The chosen StarHash parameters do not fully cover the chosen HEALPix grid."""
 
 
-class InvalidHEALPIXIndexError(Exception):
-    """The given coordinates map to an invalid HEALPIX index."""
+class InvalidHEALPixIndexError(Exception):
+    """The given coordinates map to an invalid HEALPix index."""
 
 
 @click.group(context_settings={"show_default": True})
