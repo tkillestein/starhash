@@ -51,6 +51,23 @@ starhash get-name-from-coord --ra=321.4214 --dec=-54.21231
 starhash get-coord-from-name gathering-equinox-approach
 ```
 
+## Pre-computed catalogs
+
+This repo also hosts a minimal set of pre-computed name mappings between existing
+catalogues/name registries and their new `starhash` name, for those who want to explore
+without installing anything.
+
+The [Transient Name Server](https://wis-tns.org)
+and [NASA Exoplanet Archive](https://https://exoplanetarchive.ipac.caltech.edu/) lists
+are located under [`paper/data`](paper/data) and are distributed as `.csv` files with `gzip`
+compression.
+
+#### Direct links
+[nasa_exoplanet_archive_starhashed.csv.gz](paper/data/nasa_exoplanet_archive_starhashed.csv.gz)
+[tns_public_objects_starhashed.csv.gz](paper/data/tns_public_objects_starhashed.csv.gz)
+
+
+
 ## Development and contributing
 
 ```shell
