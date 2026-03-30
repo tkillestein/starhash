@@ -53,8 +53,13 @@ build-backend = "hatchling.build"
 [project.scripts]
 starhash = "starhash.core:cli"
 
-[tool.hatchling.build.targets.wheel]
+[tool.hatch.build.targets.wheel]
 packages = ["src/starhash"]
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    "/paper"
+]
 
 [tool.ruff]
 line-length = 100
