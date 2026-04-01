@@ -10,6 +10,9 @@ Generate unique, memorable, and deterministic names for astronomical objects.
 [![ty](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ty/main/assets/badge/v0.json)](https://github.com/astral-sh/ty)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![HEALPix](https://img.shields.io/badge/HEALPix-powered-blue)](https://healpix.jpl.nasa.gov/)
+[![Static Badge](https://img.shields.io/badge/arXiv-2603.29584-b31b1b)](https://arxiv.org/abs/2603.29584)
+
+Read the paper on arXiv: https://arxiv.org/abs/2603.29584
 
 ## Why?
 
@@ -59,14 +62,15 @@ without installing anything.
 
 The [Transient Name Server](https://wis-tns.org)
 and [NASA Exoplanet Archive](https://https://exoplanetarchive.ipac.caltech.edu/) lists
-are located under [`paper/data`](paper/data) and are distributed as `.csv` files with `gzip`
-compression.
+are located under [`paper/data`](paper/data) and are distributed as `.csv` files with
+`gzip`compression.
 
 #### Direct links
-[nasa_exoplanet_archive_starhashed.csv.gz](paper/data/nasa_exoplanet_archive_starhashed.csv.gz)
+
+These are only functional on GitHub.
+
+[nasa_exoplanet_archive_starhashed.csv.gz](paper/data/nasa_exoplanet_archive_starhashed.csv.gz)  
 [tns_public_objects_starhashed.csv.gz](paper/data/tns_public_objects_starhashed.csv.gz)
-
-
 
 ## Development and contributing
 
